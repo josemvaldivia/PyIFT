@@ -21,8 +21,9 @@ class Queue(object):
     def remove_elem(self, elem):
         try:
             self.heap.remove(elem)
+            return elem
         except ValueError:
-            pass
+            return None
 
     def empty(self):
         if len(self.heap) == 0:

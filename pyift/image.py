@@ -1,5 +1,9 @@
 class Image():
-    """Image is a list of values"""
+
+    """
+    Image is a list of values
+    """
+
     def __init__(self, xsize, ysize, zsize):
         self.val = [0 for i in range(xsize * ysize * zsize)]
         self.xsize = xsize
